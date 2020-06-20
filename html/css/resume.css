@@ -53,6 +53,7 @@ img{
 	margin:0px;
 	padding:0px;
 	}
+/*左侧个人资料区域*/
 #left{
 	float:left;
 	width:60%;
@@ -77,6 +78,7 @@ img{
 	color:#963;
 	height:300px;
 	}
+/*右侧专业技能与奖项区域*/
 #right{
 	float:right;
 	padding:40px 0px 20px 0px;
@@ -119,6 +121,7 @@ img{
 	text-decoration:underline;
 	font-weight:bold;
 	}
+/*页脚部分*/
 #footer{
 	clear:both;
 	height:40px;

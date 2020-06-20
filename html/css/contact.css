@@ -1,4 +1,4 @@
-html, body, div, span,h1, h2, h3, h4, p, img,  b, u, i, dl,  footer {
+html, body, div, span,h1, h2, h3, h4, p, img,  b, u, footer {
     margin: 0;
     padding: 0;
     border: 0;
@@ -66,7 +66,7 @@ h1 {
 }
 span.w3 {
     margin-left: 40px;
-    font-style: italic;
+    font-style: italic; /*字体为斜体*/
 }
 img {
     max-width: 40%;
@@ -98,7 +98,7 @@ span.w3 {
     margin-left: 40px;
     font-style: italic;
 }
-
+/*页脚*/
 .footer {
     padding: 25px 0 0 0;
     color: #fff;

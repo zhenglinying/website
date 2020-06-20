@@ -3,23 +3,10 @@
 *::after 
 {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: border-box;  /*指定宽度和高度的框，并把边框和内边距放入框中 */
   }
-h1, h2  .h1, .h2 {
-    line-height: 1.5;
-    color: rgba(0, 0, 0, 0.8);
-    font-weight: 400;
-    font-family: "Poppins", Arial, sans-serif;
-}
-h1, .h1 {
-    font-size: 2.5rem;
-}
+/*左边的导航区 */
 body.offcanvas #colorlib{
-    -moz-transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
     width: 270px;
     background: #fff;
     z-index: 999;
@@ -35,25 +22,18 @@ body.offcanvas #colorlib{
     bottom: 0;
     top: 0;
     left: 0;
-    overflow-y: scroll;
+    overflow-y: scroll;  /*显示滚动条*/
     z-index: 1001;
     background: rgba(0, 0, 0, 0.04);
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+}
+/*名字的字体 */
+#colorlib #logo {
+    margin-bottom: 20px;
 }
 #main {
     width: 100%;
-    float: right;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    float: right; /*右浮*/
 }
-
 #colorlib #menu ul li {
     margin: 0 0 15px 0;
     padding: 0;
@@ -67,15 +47,8 @@ body.offcanvas #colorlib{
     position: relative;
     padding: 10px 0;
     font-family: "Montserrat", Arial, sans-serif;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
 }
-#colorlib #logo {
-    margin-bottom: 20px;
-}
+/*导航的字体*/
 a {
     color: #78d5ef;
     text-decoration: none;
@@ -93,6 +66,15 @@ a {
     padding-right: 400px;
     padding-left: 100px;
 }
+h1, h2  .h1, .h2 {
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    font-family: "Poppins", Arial, sans-serif;
+}
+h1, .h1 {
+    font-size: 2.5rem;
+}
 body.offcanvas #main {
     top: 0;
     -moz-transform: translateX(270px);
@@ -101,15 +83,14 @@ body.offcanvas #main {
     -o-transform: translateX(270px);
     transform: translateX(270px);
 }
-
 .wrap .over {
     position: absolute;
-    top: 0;
+    top:0;
     left: 0;
     right: 0;
     bottom: 0;
     content: '';
-    opacity: .7;
+    opacity: .7; /*透明度*/
     background: #fff;
     z-index: 0;
 }
@@ -119,17 +100,15 @@ body.offcanvas #main {
     font-weight: 500;
 	 text-align: center !important;
 }
-
 .wrap .text .img
  {
     width: 200px;
     height: 200px;
     margin: 0 auto;
-    -webkit-border-radius: 50%;
+    -webkit-border-radius: 50%; /*圆角效果*/
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
-	
 }
 body {
     font-family: "Montserrat", Arial, sans-serif;
@@ -139,11 +118,6 @@ body {
     font-weight: 500;
     color: #999999;
 }
-.wrap .text .btn {
-    font-weight: 400;
-    color: #b3b3b3;
-    border-bottom: 2px solid #b3b3b3;
-}
 .wrap .text h1 {
     letter-spacing: 1px;
     font-weight: 900;
@@ -152,4 +126,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+/*使用按钮跳转至‘关于’页面*/
+.wrap .text .btn {
+    font-weight: 400;
+    color: #b3b3b3;
+    border-bottom: 2px solid #b3b3b3;
 }

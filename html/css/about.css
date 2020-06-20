@@ -6,16 +6,11 @@ body {
     color: #b3b3b3;
     background: #fff;
 }
-a {
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-    text-decoration: none;
-}
 *, :after, :before {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+/*图表跳转至index主页*/
 .fa-home:before{content:"\27F0"}
 .fa {
     display: inline-block;
@@ -105,7 +100,7 @@ h1, h2, h3 {
     padding: 0;
     margin: 0;
 }
-
+/*表格*/
 #table-2 {
 border-bottom-width: 1px;
 border-bottom-style: solid;
